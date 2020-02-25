@@ -1,0 +1,33 @@
+pipeline = [
+     {"$group": {"_id": "$mother”, 
+		"count": {"$sum": 1}},
+		"records":{
+        $push: "$$ROOT"
+        },
+     {"$sort": SON([("count", -1), ("_id", -1)])}
+     }
+ ]
+
+valid syntax:
+pipeline = [
+...     {"$group": {"_id": "$mother", "count": {"$sum": 1}}},
+...     {"$sort": SON([("count", -1), ("_id", -1)])}
+... ]
+
+valid pipeline sons:
+pipeline= [
+        {"$group": {"_id": "$mother", "records": {"$push": "$$ROOT.name"},"count": {"$sum": 1}}},
+        {"$sort": SON([("count", -1), ("_id", -1)])}
+]
+list(collection.aggregate(pipeline))
+
+
+db.collection.aggregate({
+    "$group": { "_id": "$mother”, "records": {$push: "$$ROOT['name']"},"count": {"$sum": 1}}
+    {"$sort": SON([("count", -1), ("_id", -1)])}
+}).pretty()
+
+pipeline = [{
+    "$group": { "_id": "$mother”, "records": {$push: "$$ROOT['name']"},"count": {"$sum": 1} }
+    {"$sort": SON([("count", -1), ("_id", -1)])}
+}]
