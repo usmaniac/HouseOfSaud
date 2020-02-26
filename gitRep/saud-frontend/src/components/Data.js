@@ -4,6 +4,7 @@ import {  Row, Col, Container, } from 'react-bootstrap';
 import PeopleCard from './PeopleCard'
 import Description from './Description';
 import SortAndFilter from './SortAndFilter';
+import FullBrothers from './FullBrothers'
 
 function Data() {
 
@@ -107,6 +108,25 @@ function Data() {
             </Col>
             )
         })
+    }
+
+    else if (data.sortFilter === "full_brothers"){
+        return (
+            <React.Fragment>
+            <Row>
+                <SortAndFilter setFilter={setFilter}/>
+                {console.log(data.sortFilter)}
+            </Row>
+                <p> King Abdul Aziz had up to 22 wives with estimates of around 100 children. 
+                Despite having the same father, the sons with a common mother were naturally much closer
+                to one another. This would play out politically in the following generations as power blocs
+                were formed amongst full brothers. The most powerful of this bloc was the Sudairi Seven; 7 full brothers 
+                born to King Abdul-Aziz and his wife Hassa Al Sudairi. 
+            </p>  
+            <FullBrothers/>
+            </React.Fragment>
+        )
+          
     }
 
     else{
