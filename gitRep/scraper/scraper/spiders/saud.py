@@ -60,9 +60,9 @@ class QuotesSpider(scrapy.Spider):
     'Saud bin Abdulaziz Al Saud':'Wadhah bint Muhammad Al Hussein Al Orair', 
     'Abdullah bin Abdulaziz':'Fahda bint Asi bin Shuraim Al Shammari'}
     
-    # cluster = MongoClient("mongodb+srv://dbUser:UzzyHaydos@cluster0-dd4a8.mongodb.net/test?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE")
-    # db = cluster["test"]
-    # collection = db["saudi_descriptions"]
+    cluster = MongoClient("mongodb+srv://dbUser:UzzyHaydos@cluster0-dd4a8.mongodb.net/test?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE")
+    db = cluster["test"]
+    collection = db["saudi_descriptions"]
 
     def parse(self, response):
         for href in response.css("#main > div:nth-child(4) > div > div:nth-child(2) > div > div > div>div> a[href]"):
@@ -140,7 +140,7 @@ class QuotesSpider(scrapy.Spider):
         if len(self.mdict) == 36:
             if self.mdict[list(self.mdict.keys())[-1]] != []:
                 print("inserting!")
-                # self.collection.insert_many(self.mdict.values())
+                self.collection.insert_many(self.mdict.values())
                 
 
 
