@@ -5,6 +5,7 @@ import PeopleCard from './PeopleCard'
 import Description from './Description';
 import SortAndFilter from './SortAndFilter';
 import FullBrothers from './FullBrothers'
+import Mainking from './Mainking'
 
 function Data() {
     const [data, setData] = useState({
@@ -142,6 +143,9 @@ function Data() {
     if(data.values.length > 0) {
         return (
             <div>
+            <Col sm='6'>
+                <Mainking/>
+            </Col>
             <Row>
                 <SortAndFilter setFilter={setFilter}/>
                 {console.log(data.sortFilter)}

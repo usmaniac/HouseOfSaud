@@ -10,7 +10,7 @@ function Description(props) {
     }); 
     const borderStyle = {
         border: '1px solid', paddingLeft: '20px', paddingRight: '20px', paddingTop: '10px',
-        height: '400px',
+        height: '250px',
         overflowY: 'scroll',
         position: 'sticky',
         top:'10px'

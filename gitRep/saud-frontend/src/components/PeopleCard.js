@@ -62,13 +62,12 @@ function PeopleCard(props) {
         // onClick={() => { func1(); func2();}}
         variant="light" style={{height:"80%"}}   
         >
-
-        <div style={{width:"100%", height:"100%"}}>
-        <Card style={cardStyle}>
-          <Card.Img top width="100%" src ={img} alt="House of Saud"  style={{height:"80%"}}/>
-            <Card.Title style={textStyle}>{slicedName}</Card.Title>
-        </Card>
-        </div>
+            <div style={{width:"100%", height:"100%"}}>
+            <Card style={cardStyle}>
+            <Card.Img top width="100%" src ={img} alt="House of Saud"  style={{height:"80%"}}/>
+                <Card.Title style={textStyle}>{slicedName}</Card.Title>
+            </Card>
+            </div>
         </Button>
 
     )
