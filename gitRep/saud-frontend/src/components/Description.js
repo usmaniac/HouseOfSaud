@@ -8,20 +8,25 @@ function Description(props) {
         }
         return element.name.replace("Al Saud", "").includes(props.id)
     }); 
+    const borderStyle = {
+        border: '1px solid', paddingLeft: '20px', paddingRight: '20px', paddingTop: '10px',
+        height: '400px',
+        overflowY: 'scroll',
+        position: 'sticky',
+        top:'10px'
+    }
 
-    // console.log(element)
     return (
-        <div>
-            {/* {props.id}      */}
-            Name: {element.name}
+        <div style={borderStyle}>
+            <b>Name</b>: {element.name}
             <br/>
-            Mother: {element.mother}
+            <b>Mother</b>: {element.mother}
             <br/>
-            Born: {element.born}
+            <b>Born</b>: {element.born}
             <br/>
-            Description: {element.description}
+            <b>Description</b>: {element.description}
             <br/>
-            Sons: {element.sons.map(txt => <p>{txt}</p>)}
+            <b>Sons</b>: {element.sons.map(txt => <p>{txt}</p>)}
         </div>
     )
 

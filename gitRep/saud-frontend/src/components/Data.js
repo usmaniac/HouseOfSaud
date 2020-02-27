@@ -7,7 +7,6 @@ import SortAndFilter from './SortAndFilter';
 import FullBrothers from './FullBrothers'
 
 function Data() {
-
     const [data, setData] = useState({
         values:[],
         id: "Nayef",
@@ -157,8 +156,8 @@ function Data() {
                         </Row>
                     </Container>
                 </Col>
-                <Col sm="6">
-                <Description data={data.values} id={data.id} />
+                <Col sm="5" style={{textAlign: "left"}}>
+                    <Description data={data.values} id={data.id}/>
                 </Col>
             </Row>
             
