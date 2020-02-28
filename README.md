@@ -46,7 +46,7 @@ Note:
 
 # Setup Instructions (Client)
 
-1. Create a separate terminal windonw and navigate to /HouseOfSaud/gitRep/saud-frontend and execute <code>npm install</code>
+1. Create a separate terminal window and navigate to /HouseOfSaud/gitRep/saud-frontend and execute <code>npm install</code>
 
-2. After this run <code>npm start</code> you should be taken to http://localhost:3000. 
+2. After this run <code>npm start</code> and you should be taken to http://localhost:3000 where the app will be running.
 
