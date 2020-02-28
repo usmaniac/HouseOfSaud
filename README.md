@@ -5,7 +5,7 @@ of Saudi Arabia, providing profiles (that include names of sons, mothers, date o
 
 Data has been scraped from Google Search results (using Python's scrapy library)  and stored in a mongoDB database. A Python Flask backend was used for the API endpoints and React JS was used for the front end.
 
-Note: I do not own the rights to any of the photos on this site and I would like to credit http://graphics.wsj.com/saudi-arabia-family-tree/ for the style of the header component of this site.
+**Note:** I do not own the rights to any of the photos on this site and I would like to credit http://graphics.wsj.com/saudi-arabia-family-tree/ for the style of the header component of this site.
 
 ![Alt text](gitRep/30sec.gif)
 
