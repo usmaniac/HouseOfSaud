@@ -9,8 +9,8 @@ function SortAndFilter(props) {
     }
 
     return (
-        <div style={{marginLeft:'2em'}}>
-            <DropdownButton id="dropdown-basic-button" title="Filters" onSelect={handleSelect} >
+        <div style={{marginLeft:'2em', marginBottom:'2em'}}>
+            <DropdownButton id="dropdown-basic-button" title="Filters" onSelect={handleSelect}>
                 <Dropdown.Item eventKey="old_first">Sort By Age: Old to Young</Dropdown.Item>
                 <Dropdown.Item eventKey="young_first">Sort By Age: Young to Old</Dropdown.Item>
                 <Dropdown.Item eventKey="full_brothers">Full Brothers</Dropdown.Item>
