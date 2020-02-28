@@ -1,8 +1,7 @@
-# HouseOfSaud
+# SaudiVisualiser
  
-Saudi Arabia's Royal Family is one of the most powerful monarchies in the world but also the least well known. This website
-aims to bridge this gap in knowledge by presenting a clear view of the first generation of the ruling branch
-of Saudi Arabia. 
+Saudi Arabia's Royal Family is one of the most powerful monarchies in the world but also the least well known. SaudiVisualiser is a website that aims to bridge this gap in knowledge by presenting a clear view of the first generation of the ruling branch
+of Saudi Arabia, providing profiles (that include names of sons, mothers, date of birth and descriptions) for all 36 sons of the founder of Saudi Arabia.
 
 Data has been scraped from Google Search results (using Python's scrapy library)  and stored in a mongoDB database. A Python Flask backend was used for the API endpoints and React JS was used for the front end.
 
