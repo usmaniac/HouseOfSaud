@@ -5,6 +5,7 @@ of Saudi Arabia, providing profiles (that include names of sons, mothers, date o
 
 Data has been scraped from Google Search results (using Python's scrapy library)  and stored in a mongoDB database. A Python Flask backend was used for the API endpoints and React JS was used for the front end.
 
+![Alt text](gitRep/30sec.gif)
 
 # Setup Instructions (Server)
 
