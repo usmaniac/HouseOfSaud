@@ -25,7 +25,7 @@ Data has been scraped from Google Search results (using Python's scrapy library)
 
         $ venv\Scripts\activate
 
-4. Install the dependencies from requirements.txt:
+4. Install the dependencies from requirements.txt (first navigate to 'gitRep' ie 'cd HouseOfSaud/gitRep':
 
         (venv) $ pip3 install -r requirements.txt
 
